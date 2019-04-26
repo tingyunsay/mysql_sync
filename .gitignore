@@ -1,0 +1,10 @@
+*.pyc
+*.log
+data
+*.txt
+*.list
+build
+*.spec
+dist
+*xlsx
+*.sql
