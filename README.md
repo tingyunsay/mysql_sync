@@ -6,7 +6,8 @@ mysql数据同步简易脚本(一对多)
 
 使用的是<span style="color:OrangeRed;">mysql 命令导入</span>，相关的导入方式还有[mysql导入数据](https://www.runoob.com/mysql/mysql-database-import.html)  
 将配置文件中的source_database中的表(table)，同步到target_database中的每个库中去.  
-**代码流程**
+
+**代码流程**  
 其先将source_database中的表数据load成一个文件（bakfile_name），接着其会主动依次创建target_database中指定的db名，最后再将source_database中的表数据依次load到新建（或已存在）的db中去
 
 **功能代码**
