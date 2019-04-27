@@ -8,6 +8,7 @@ mysql数据同步简易脚本(一对多)
 将配置文件中的source_database中的表(table)，同步到target_database中的每个库中去.  
 
 **代码流程**  
+
 其先将source_database中的表数据load成一个文件（bakfile_name），接着其会主动依次创建target_database中指定的db名，最后再将source_database中的表数据依次load到新建（或已存在）的db中去
 
 **功能代码**
@@ -19,3 +20,5 @@ mysql -u{user} -p{pwd} -h{host} -P{port} {db} < ./{bakfile_name}
 ### 使用
 在target_database中依次配置好需要导入的目标群数据库，但是注意：其导入方式会直接在原始数据上insert新数据 -- **具体可以查看导出的sql文件内容** ，所以可能会导致数据库文件出现异常（新数据将老数据覆盖，两个数据库并非完全相同），最好在导入数据前，确认target_db中的表中的数据是否还需要使用（若不需要，可以直接drop表）
 
+### 注意
+在使用之前，须确保操作的机器 ->> source_database , target_database 中的所有机器是联通的，否则会导致导出数据失败.

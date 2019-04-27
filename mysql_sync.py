@@ -16,7 +16,8 @@ logging.basicConfig(level=logging.INFO,
 #将日志打印到标准输出（设定在某个级别之上的错误）
 console = logging.StreamHandler()
 console.setLevel(logging.INFO)
-formatter = logging.Formatter('%(name)-12s: %(levelname)-6s %(lineno)s %(message)s')
+#formatter = logging.Formatter('%(name)-12s: %(levelname)-6s %(lineno)s %(message)s')
+formatter = logging.Formatter('%(asctime)s %(filename)s [line:%(lineno)d] %(levelname)s %(message)s')
 console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 

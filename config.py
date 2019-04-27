@@ -12,13 +12,12 @@ source_database = {
     "table":"magazine_label"
 }
 
-target_database = [{
-    "user":"tingyun",
+target_database = [
+    {"user":"tingyun",
     "pwd":"tingyun",
     "host":"127.0.0.1",
     "port":3306,
-    "db":"music_ugc"
-    }
+    "db":"music_ugc"},
 
 ]
 
