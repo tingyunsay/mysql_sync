@@ -2,7 +2,7 @@
 mysql数据同步简易脚本(一对多)
 
 ### 功能
-由于近期的开发常需要在一些测试库之间迁移表数据，为了减少复制粘贴的工作，这个脚本正是用于<font color=red>简单配置/快速同步mysql指定表数据</font>.   
+由于近期的开发常需要在一些测试库之间迁移表数据，为了减少复制粘贴的工作，这个脚本正是用于<font color=OrangeRed>简单配置/快速同步mysql指定表数据</font>.   
 
 使用的是<font colot=red>mysql 命令导入</font>，相关的导入方式还有[mysql导入数据](https://www.runoob.com/mysql/mysql-database-import.html)  
 
